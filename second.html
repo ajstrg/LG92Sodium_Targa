@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+  
+		<title>second page !!</title>
+
+		<meta charset="UTF-8">
+		<meta name="author" content="Anika Justine Targa">
+		<meta name="keywords" content="HTML, JS">
+		<meta name="revised" content="15-02-2022">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	
+		<style>
+				
+			button.one {
+				display: block;
+				background-color: #f2cbc7;
+				margin-top: 2em;
+				margin-left: 2em;
+				height: 5.25em;
+				width: 12em;
+				border-radius: 2em;
+				border-color: transparent;
+				font-family: "Karla", sans-serif;
+			}
+			
+			button.two {
+				margin-top: 1.5em;
+			}
+			
+			button:hover {
+				background-color: #e6968e;
+			}
+			
+			img {
+				display: block;
+				height: 10em;
+				width: 10em;
+				margin-top: -10em;
+				margin-left: 13.5em;
+				border-radius: 2em;
+			}
+	
+		</style>
+	
+	</head>
+  
+
+  <body>
+
+		<button class="one" onclick="changeImage()">one</button>
+		<button class="one two" onclick="revertImage()">two</button>	
+		
+		<img id="image" src = "cat1.jpg">
+		
+		<script>
+
+			function changeImage()
+			{
+				document.getElementById("image").src = 'cat2.jpg';
+			}
+			
+			function revertImage()
+			{
+				document.getElementById("image").src = 'cat1.jpg';
+			}
+
+		</script>
+  </body>
+
+</html>
